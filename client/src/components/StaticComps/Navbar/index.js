@@ -8,7 +8,7 @@ class Navbar extends Component {
 
     componentDidMount() {
         fetch("/checkAuth")
-        .then(res => res.json())
+        // .then(res => res.json())
         .then(res => this.setState({
             isLoggedIn: res.isLoggedIn
         }));
